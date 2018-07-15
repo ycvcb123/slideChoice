@@ -1,0 +1,4 @@
+<view style='height: 100%;'>
+    <component-mask-choice id='maskChoice'></component-mask-choice>
+    <view class="showChoice" bindtap="changeShow">展示选择</view>
+</view>

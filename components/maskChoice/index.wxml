@@ -1,0 +1,14 @@
+<view class="{{showTicket ? 'swiperContainer' : 'dsn'}}">
+    <view animation="{{maskChoiceAnimationData}}" class="mask"></view>
+    <swiper animation="{{contentAnimationData}}" current="{{1}}" previous-margin="80rpx" next-margin="80rpx" class="swiper" bindchange="onSwiperChange">
+        <block wx:for="{{ticketList}}" wx:key="{{unique}}">
+            <swiper-item bindtap="handleToDetail" class="swiper-item" catchtap="test">
+                <view class="'swiper-item-image' {{item.selected ? 'selected' : ''}} {{isIphoneX ? 'X-margin-top-240' : ''}}">
+                    <image src="{{item.proUrl}}" class="swiper-image ad-ticket" />
+                </view>
+            </swiper-item>
+        </block>
+    </swiper>
+    <view catchtap="confirmChoice" class="button" style="{{isIphoneX ? 'bottom: 264rpx' : ''}}">确认选择</view>
+    <image catchtap="cancelChoice" src="./img/close.png" class="close-button" style="{{isIphoneX ? 'bottom: 162rpx' : ''}}"></image>
+</view>

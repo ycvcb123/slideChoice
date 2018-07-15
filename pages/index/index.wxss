@@ -1,0 +1,12 @@
+.showChoice {
+    width: 100%;
+    height: 88rpx;
+    line-height: 88rpx;
+    text-align: center;
+    background: #000;
+    color: #09ff00;
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    z-index: 1;
+}
